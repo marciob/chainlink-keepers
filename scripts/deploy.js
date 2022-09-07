@@ -9,7 +9,7 @@ async function main() {
  */
   const counter = await ethers.getContractFactory("Counter");
   // deploy the contract
-  const deployedCounterContract = await upkeepIDConsumerExample.deploy();
+  const deployedCounterContract = await counter.deploy(30);
 
   await deployedCounterContract.deployed();
 
